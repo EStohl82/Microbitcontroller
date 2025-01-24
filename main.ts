@@ -36,7 +36,8 @@ loops.everyInterval(200, function () {
             radio.sendValue("R", Calc_X)
             basic.showArrow(ArrowNames.East)
         } else {
-        	
+            radio.sendValue("L", 0)
+            radio.sendValue("R", 0)
         }
         OneRun = 1
     } else {
@@ -47,7 +48,8 @@ loops.everyInterval(200, function () {
             radio.sendValue("Z", Calc_Y)
             basic.showArrow(ArrowNames.South)
         } else {
-        	
+            radio.sendValue("V", 0)
+            radio.sendValue("R", 0)
         }
         OneRun = 0
     }
